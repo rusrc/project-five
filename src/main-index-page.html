@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-bs-theme="dark">
+<html lang="ru" data-bs-theme="@@scheme">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
   </head>
   <body>
 
-    @@include("shared/menu.html")
+    @@include("htmls/menu.html")
 
     <!-- <br class="py-5" /> -->
     <div class="container">
@@ -83,7 +83,7 @@
       </div>
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4">
-        @@loop('shared/card.html', [ { "image": "1.avif" }, { "image": "2.avif"}, {
+        @@loop('htmls/card.html', [ { "image": "1.avif" }, { "image": "2.avif"}, {
         "image": "3.avif"}, { "image": "4.avif" }, { "image": "5.avif"}, {
         "image": "6.avif"}, { "image": "7.avif" }, { "image": "8.avif"}, {
         "image": "9.avif"}, { "image": "10.avif" }, { "image": "11.avif"}, {
