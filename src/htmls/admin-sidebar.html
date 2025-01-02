@@ -78,35 +78,45 @@
     </symbol>
 </svg>
 
-<ul class="nav flex-column">
-    <li class="nav-item">
-        <a class="nav-link d-flex align-items-center gap-2 link-dark"
-            title="Покупатели пишут сюда, чтобы согласовать заказы" href="/dist/supplier-offer-page.html">
-            <svg class="bi">
-                <use xlink:href="#people"></use>
-            </svg>
-            Запросы покупателей
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link d-flex align-items-center gap-2 link-dark" title="Заказы которые уже есть или в архиве"
-            href="/dist/supplier-home-page.html">
-            <svg class="bi">
-                <use xlink:href="#cart"></use>
-            </svg>
-            Заказы покупателей
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link d-flex align-items-center gap-2 link-dark" title="Список ваших товаров" aria-current="page"
-            href="/dist/supplier-product-page.html">
-            <svg class="bi">
-                <use xlink:href="#house-fill"></use>
-            </svg>
-            Управление продуктами
-        </a>
-    </li>
-    <!-- <li class="nav-item">
+
+<div class="sidebar border border-top-0 col-md-3 col-lg-2 p-0 bg-light">
+    <div class="offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 link-dark"
+                        title="Покупатели пишут сюда, чтобы согласовать заказы" href="/dist/supplier-offer-page.html">
+                        <svg class="bi">
+                            <use xlink:href="#people"></use>
+                        </svg>
+                        Запросы покупателей
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 link-dark"
+                        title="Заказы которые уже есть или в архиве" href="/dist/supplier-home-page.html">
+                        <svg class="bi">
+                            <use xlink:href="#cart"></use>
+                        </svg>
+                        Заказы покупателей
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 link-dark" title="Список ваших товаров"
+                        aria-current="page" href="/dist/supplier-product-page.html">
+                        <svg class="bi">
+                            <use xlink:href="#house-fill"></use>
+                        </svg>
+                        Управление продуктами
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
         <a class="nav-link d-flex align-items-center gap-2 link-dark" href="#">
             <svg class="bi">
                 <use xlink:href="#file-earmark"></use>
@@ -130,26 +140,30 @@
             Integrations
         </a>
     </li> -->
-</ul>
+            </ul>
 
 
-<hr class="my-3">
+            <hr class="my-3">
 
-<ul class="nav flex-column mb-auto">
-    <li class="nav-item">
-        <a class="nav-link d-flex align-items-center gap-2 link-dark" href="#">
-            <svg class="bi">
-                <use xlink:href="#gear-wide-connected"></use>
-            </svg>
-            Настройки
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link d-flex align-items-center gap-2 link-danger" href="#">
-            <svg class="bi">
-                <use xlink:href="#door-closed"></use>
-            </svg>
-            Выйти
-        </a>
-    </li>
-</ul>
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 link-dark" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#gear-wide-connected"></use>
+                        </svg>
+                        Настройки
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 link-danger" href="#">
+                        <svg class="bi">
+                            <use xlink:href="#door-closed"></use>
+                        </svg>
+                        Выйти
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

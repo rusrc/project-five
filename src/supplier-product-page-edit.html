@@ -151,104 +151,95 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar border border-top-0 col-md-3 col-lg-2 p-0">
-                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu"
-                    aria-labelledby="sidebarMenuLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                            data-bs-target="#sidebarMenu" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
 
-                        @@include("htmls/admin-sidebar.html")
+            @@include("htmls/admin-sidebar.html")
 
-                    </div>
-                </div>
-            </div>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
 
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+                <div class="row bg-light">
 
-                <div class="container mt-5">
-                    <form>
-                        <!-- Title -->
-                        <div class="mb-3">
-                            <label for="productTitle" class="form-label">Название продукта</label>
-                            <input type="text" class="form-control" id="productTitle" value="Тестовое название продукта"
-                                required>
-                        </div>
-
-                        <!-- Category -->
-                        <div class="mb-3">
-                            <label for="productCategory" class="form-label">Категория</label>
-                            <select class="form-select" id="productCategory" required>
-                                <option selected>Electronics</option>
-                                <option>Accessories</option>
-                                <option>Clothing</option>
-                                <option>Home Appliances</option>
-                                <option>Books</option>
-                            </select>
-                        </div>
-
-                        <!-- Long Description -->
-                        <div class="mb-3">
-                            <label class="form-label">Описание продукта</label>
-                            <div id="longDescriptionEditor" class="border p-2 rounded bg-light"
-                                style="min-height: 200px;"></div>
-                            <div class="form-text">Используйте редактор, чтобы добавить больше информации.
+                    <div class="col">
+                        <form class="pt-3">
+                            <!-- Title -->
+                            <div class="mb-3">
+                                <label for="productTitle" class="form-label">Название продукта</label>
+                                <input type="text" class="form-control" id="productTitle"
+                                    value="Тестовое название продукта" required>
                             </div>
-                        </div>
 
-                        <!-- Images -->
-                        <div class="mb-3">
-                            <label for="productImages" class="form-label">Изображения</label>
-                            <div class="d-flex align-items-center gap-3 mb-2">
-                                <img src="/dist/assets/images/100.png" alt="Current Image" class="img-thumbnail"
-                                    style="width: 100px; height: 100px;">
-                                <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                            <!-- Category -->
+                            <div class="mb-3">
+                                <label for="productCategory" class="form-label">Категория</label>
+                                <select class="form-select" id="productCategory" required>
+                                    <option selected>Electronics</option>
+                                    <option>Accessories</option>
+                                    <option>Clothing</option>
+                                    <option>Home Appliances</option>
+                                    <option>Books</option>
+                                </select>
                             </div>
-                            <input type="file" class="form-control" id="productImages" accept="image/*" multiple>
-                            <div class="form-text">Загрузите новые изображения (JPG, PNG, GIF).</div>
-                        </div>
 
-                        <!-- Prices -->
-                        <div class="mb-3">
-                            <label class="form-label">Цены в зависимости от количества </label>
-                            <div class="row align-items-center mb-2">
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control"
-                                        placeholder="Quantity range (e.g., 1-4 items)" value="1–4 items" required>
+                            <!-- Long Description -->
+                            <div class="mb-3">
+                                <label class="form-label">Описание продукта</label>
+                                <div id="longDescriptionEditor" class="border p-2 rounded bg-light"
+                                    style="min-height: 200px;"></div>
+                                <div class="form-text">Используйте редактор, чтобы добавить больше информации.
                                 </div>
-                                <div class="col-md-4">
-                                    <input type="number" class="form-control" placeholder="Price (e.g., 499.99)"
-                                        value="499.99" required>
-                                </div>
-                                <div class="col-md-4">
+                            </div>
+
+                            <!-- Images -->
+                            <div class="mb-3">
+                                <label for="productImages" class="form-label">Изображения</label>
+                                <div class="d-flex align-items-center gap-3 mb-2">
+                                    <img src="/dist/assets/images/100.png" alt="Current Image" class="img-thumbnail"
+                                        style="width: 100px; height: 100px;">
                                     <button type="button" class="btn btn-danger btn-sm">Remove</button>
                                 </div>
+                                <input type="file" class="form-control" id="productImages" accept="image/*" multiple>
+                                <div class="form-text">Загрузите новые изображения (JPG, PNG, GIF).</div>
                             </div>
-                            <div class="row align-items-center mb-2">
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control"
-                                        placeholder="Quantity range (e.g., 5-9 items)" value="5–9 items" required>
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="number" class="form-control" placeholder="Price (e.g., 450.00)"
-                                        value="450.00" required>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="button" class="btn btn-danger btn-sm">Remove</button>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-primary btn-sm mt-2">Добавить ценовой диапазон</button>
-                        </div>
 
-                        <!-- Save and Cancel Buttons -->
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="btn btn-secondary me-2">Отмена</button>
-                            <button type="submit" class="btn btn-primary">Сохранить</button>
-                        </div>
-                    </form>
+                            <!-- Prices -->
+                            <div class="mb-3">
+                                <label class="form-label">Цены в зависимости от количества </label>
+                                <div class="row align-items-center mb-2">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control"
+                                            placeholder="Quantity range (e.g., 1-4 items)" value="1–4 items" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="number" class="form-control" placeholder="Price (e.g., 499.99)"
+                                            value="499.99" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-2">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control"
+                                            placeholder="Quantity range (e.g., 5-9 items)" value="5–9 items" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="number" class="form-control" placeholder="Price (e.g., 450.00)"
+                                            value="450.00" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-sm mt-2">Добавить ценовой
+                                    диапазон</button>
+                            </div>
+
+                            <!-- Save and Cancel Buttons -->
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary me-2">Отмена</button>
+                                <button type="submit" class="btn btn-primary">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <script>

@@ -151,23 +151,10 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar border border-top-0 col-md-3 col-lg-2 p-0">
-                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu"
-                    aria-labelledby="sidebarMenuLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                            data-bs-target="#sidebarMenu" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            
+            @@include("htmls/admin-sidebar.html")
 
-                        @@include("htmls/admin-sidebar.html")
-
-                    </div>
-                </div>
-            </div>
-
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
                 <div class="row vh-100">
                     <!-- Sidebar -->
                     <div class="col-md-4 col-lg-3 border-end bg-light p-3">
@@ -175,7 +162,7 @@
                         <ul class="list-group">
                             <li class="list-group-item d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                    <img src="https://via.placeholder.com/40" class="rounded-circle" alt="User 1">
+                                    <img src="assets/images/40.png" class="rounded-circle" alt="User 1">
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <h6 class="mb-0">Михаил Жамелов</h6>
@@ -184,7 +171,7 @@
                             </li>
                             <li class="list-group-item d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                    <img src="https://via.placeholder.com/40" class="rounded-circle" alt="User 2">
+                                    <img src="assets/images/40.png" class="rounded-circle" alt="User 2">
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <h6 class="mb-0">Юрий</h6>
@@ -193,7 +180,7 @@
                             </li>
                             <li class="list-group-item d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                    <img src="https://via.placeholder.com/40" class="rounded-circle" alt="User 3">
+                                    <img src="assets/images/40.png" class="rounded-circle" alt="User 3">
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <h6 class="mb-0">AliceJohnson</h6>
@@ -215,7 +202,7 @@
                         <div class="flex-grow-1 p-3" style="overflow-y: auto; background-color: #f8f9fa;">
                             <div class="d-flex mb-3">
                                 <div class="me-3">
-                                    <img src="https://via.placeholder.com/40" class="rounded-circle" alt="User">
+                                    <img src="assets/images/40.png" class="rounded-circle" alt="User">
                                 </div>
                                 <div class="bg-white p-3 rounded shadow-sm">
                                     <p class="mb-0">Добрый день. Есть в наличие 50 штук говяжьих консерв?</p>
