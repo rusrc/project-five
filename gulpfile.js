@@ -12,8 +12,8 @@ function htmlInclude() {
 				basepath: '@file',
 				context: {
 					scheme: 'light',
-					link: {
-						appStore: "https://apps.apple.com/ru/app/vmire/id1616533678"
+					routes: {
+						mainIndex: "/dist/main-index-page.html"
 					}
 				}
 			})
